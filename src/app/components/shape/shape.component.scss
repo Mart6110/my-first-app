@@ -1,0 +1,54 @@
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  }
+  
+  .btn {
+    margin-top: 10px;
+  }
+  
+  .mt-5 {
+    margin-top: 2rem;
+  }
+  
+  .list-group {
+    margin-bottom: 0;
+  }
+  
+  .list-group-item {
+    padding: .5rem 1rem;
+    border-radius: .25rem;
+  }
+  
+  .fw-bold {
+    font-weight: bold;
+  }
+  
+  .ms-3 {
+    margin-left: 1rem;
+  }
+  

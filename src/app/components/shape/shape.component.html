@@ -1,0 +1,40 @@
+<div class="container">
+    <h1 class="display-4">Shape Calculations</h1>
+
+    <div class="form-group">
+        <label for="squareSide">Square Side</label>
+        <input type="number" class="form-control" id="squareSide" [(ngModel)]="squareSide"
+            placeholder="Enter square side">
+        <button (click)="addSquare()" class="btn btn-primary">Add Square</button>
+    </div>
+
+    <div class="form-group">
+        <label for="rectangleWidth">Rectangle Width</label>
+        <input type="number" class="form-control" id="rectangleWidth" [(ngModel)]="rectangleWidth"
+            placeholder="Enter rectangle width">
+
+        <label for="rectangleHeight">Rectangle Height</label>
+        <input type="number" class="form-control" id="rectangleHeight" [(ngModel)]="rectangleHeight"
+            placeholder="Enter rectangle height">
+        <button (click)="addRectangle()" class="btn btn-primary">Add Rectangle</button>
+    </div>
+
+    <div class="mt-5">
+        <h2>Calculated Shapes</h2>
+        <ul class="list-group">
+            <li *ngFor="let shape of shapes; let i = index" class="list-group-item">
+                <span class="fw-bold">Shape {{ i + 1 }}:</span>
+                <span class="ms-3">{{ getShapeType(shape) }}</span>
+                <ul class="list-group mt-2" *ngIf="isSquare(shape)">
+                    <li class="list-group-item">Area: {{ shape.area() }}</li>
+                    <li class="list-group-item">Perimeter: {{ shape.perimeter() }}</li>
+                </ul>
+
+                <ul class="list-group mt-2" *ngIf="isRectangle(shape)">
+                    <li class="list-group-item">Area: {{ shape.area() }}</li>
+                    <li class="list-group-item">Perimeter: {{ shape.perimeter() }}</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>

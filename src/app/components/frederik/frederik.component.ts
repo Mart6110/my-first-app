@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { NgbAccordionModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-  selector: 'app-first',
+  selector: 'app-frederik',
   standalone: true,
   imports: [NgbAccordionModule],
-  templateUrl: './first.component.html',
-  styleUrl: './first.component.scss'
+  templateUrl: './frederik.component.html',
+  styleUrl: './frederik.component.scss'
 })
-export class FirstComponent {
+export class FrederikComponent {
 
 }
